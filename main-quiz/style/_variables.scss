@@ -1,0 +1,85 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    padding: 0;
+    margin:0;
+}
+
+/* Overraides default value */
+$primary: rgba(115, 80, 242, 1);
+;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+$body-bg: #ebeef2;
+$body-color: #334155;
+$white: #FFFFFF;
+$black: #2E2E2E;
+
+/* Components custom colors */
+
+$header: rgba(225, 225, 225, 0.75);
+$block-component: #f6f7f9;
+$block: white;
+
+$setting: rgba(40, 53, 71, 0.3);
+$interface-icons: #2F3C4E;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "body-bg": $body-bg,
+    "body-color": $body-color,
+
+    /* Custom */
+    "header": $header,
+    "block-component": $block-component,
+    "block": $block,
+    "setting": $setting,
+    "interface-icons": $interface-icons,
+    "white": $white,
+    'black': $black, 
+);
+
+
+$main-title:36;
+$second-title:29;
+$ternary-title: 24;
+$text-18: 18;
+
+$fonts: ( 
+    'main':  $main-title, 
+    'second': $second-title,
+    'ternary': $ternary-title,
+    'text-18': $text-18
+);
+
+
+$bold: 700;
+$medium: 500;
+$regular: 400;
+
+$weight: (
+    'bold': $bold,
+    'medium': $medium,
+    'regular': $regular
+);
+
+
+

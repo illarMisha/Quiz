@@ -1,0 +1,11 @@
+@each $name, $var in $theme-colors {
+    .#{$name}-btn{background-color: #{$var}};
+  }
+
+  @each $name, $var in $fonts {
+    .#{$name}-title{font-size: #{$var}px};
+}
+
+@each $name, $var in $weight {
+    .#{$name}-text{font-weight: #{$var}};
+}

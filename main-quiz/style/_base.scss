@@ -1,0 +1,204 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.interface-icons {
+    fill: var(--bs-interface-icons)
+}
+
+.box-images {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    &--square:before {
+        content: "";
+        display: block;
+        position: relative;
+        padding-bottom: 100%;
+    }
+    &--flow {
+        min-height: 200px;
+    }
+    &__images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__coverage {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        background-color: rgba(#ffffff, 0.7);
+    }
+    &:hover &__coverage {
+        opacity: 1;
+    }
+    &__inner-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        cursor: pointer;
+        transition: 0.3s ease;
+        & > * {
+            margin: auto;
+        }
+    }
+    &__inner-icon:hover {
+        transform: scale(1.1);
+    }
+}
+
+.drop-zone {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%23333' stroke-width='2' stroke-dasharray='14%2c 8' stroke-dashoffset='17' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &__sign {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.overflow {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(208, 92, 92, 0.1);
+    z-index: 1000;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+}
+.boxses {
+    max-width: 300px;
+    min-height: 100px;
+    background-color: white;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1rem 1px;
+    overflow-x: visible;
+}
+.header {
+    height: 60px;
+    background-color: var(--bs-header);
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        padding: 1.875rem 1.875rem 1px 1.875rem;
+    }
+    .header {
+        padding: 0 1.875rem;
+    }
+}
+
+.status-sign {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    max-width: 100%;
+}
+
+.block-header {
+    background-color: var(--bs-block-component);
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    transition: opacity 0.25s ease-out;
+}
+
+.block-title {
+    flex: 1 1 auto;
+    min-height: 1.75rem;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+.block {
+    margin-bottom: 1.875rem;
+    background-color: var(--bs-block);
+}
+
+.block.block-rounded {
+    border-radius: 0.3rem;
+}
+.block.block-rounded > .block-header {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.block-content {
+    transition: opacity 0.25s ease-out;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem 1px;
+    overflow-x: visible;
+}
+.block-content.block-content-full {
+    padding-bottom: 1.25rem;
+}
+.block.block-rounded > .block-content:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.block-content.block-content-sm.block-content-full {
+    padding-bottom: 0.625rem;
+}
+.block-content.block-content-sm {
+    padding-top: 0.625rem;
+}
+
+.item.item-rounded-lg {
+    border-radius: 1.5rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
