@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/app.css">
+    <title>Настройки вопроса</title>
+</head>
+<body>
+<div class="main-container">
+    <main class="container main-block">
+        <header class="row ">
+            <div class="col">
+                <div class="setting-title d-flex flex-column bold-text main-title">
+                    <img src="img/main-img.png" alt="" class="setting-img">
+                    Название вопроса
+                </div>
+            </div>
+        </header>
+
+        <section class="row">
+            <div class="col">
+
+            <form class="form d-flex flex-column" action="#adres_server" method="get" enctype="multipart/form-data">
+                <div class="row margin-bottom">
+                    <div class="col-md-6 col-sm-12 margin-bottom-sm">
+                        <div class="form-title bold-text ">Текст вопроса</div>
+                        <input class="form-text d-flex justify-content-start" type="text" name="question" placeholder="Введите название викторины" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-title bold-text ">Время на ответ</div>
+                        <input class="form-text d-flex justify-content-start" type="text" name="question" placeholder="Введите время на ответ" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+                </div> 
+
+                <div class="row margin-bottom-text">
+                    <div class="col-md-6 col-sm-12 margin-bottom-sm">
+                        <div class="form-title bold-text ">Награда за ответ</div>
+                        <input class="form-text d-flex justify-content-start" type="text" name="question" placeholder="Установить награду" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+
+                    
+                </div> 
+
+                <div class="row margin-bottom">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-title bold-text ">Ответ на вопрос</div>
+                        <input class="form-text d-flex justify-content-start" type="text" name="question" placeholder="" autocomplete="on">
+                        <div class="form-border"></div>
+                    </div>
+                </div> 
+                
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <div class="form-title bold-text ">Афиша викторины</div>
+                        
+                        <div class="d-flex justify-content-start form-photo position-relative">
+                            <input class="ad-photo position-absolute" type="file" name="photo" multiple accept="image/*,image/jpeg">
+                            
+                            <div class="block-photo d-flex justify-content-between align-items-center">
+                                <div class="photo-text">
+                                    Выбрать файл
+                                </div>
+                                <img class="photo-img" alt="" src="img/main-img-low.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            </div>
+        </section> 
+
+        <footer class="row">
+            <div class="col">
+                <div class="btn btn-footer medium-text ">
+                    Назад
+                </div>
+                <div class="btn btn-footer-big medium-text">
+                    Сохранить и выйти
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+</body>
+</html>

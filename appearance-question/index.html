@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/app.css">
+    <title>Настройки квиза</title>
+</head>
+<body>
+<div class="main-container">
+    <main class="container main-block ">
+        <header class="row ">
+            <div class="col">
+                <div class="question-title d-flex flex-column bold-text main-title position-relative">
+                    
+                    <div class="timer ">
+                        <div id="countdown" class="countdown d-flex bold-text">
+                            <img src="img/time.svg" alt="" class="img-time ">
+                            <div class="timer-margin d-flex flex-column">
+                                <span class="countdown-text">Осталось</span>
+                                <div class="d-flex justify-content-center">
+                                    0
+                                    <span class="minutes countdown-time"></span>
+                                    :
+                                    <span class="seconds countdown-time"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="img/photo-question.png" alt="" class="question-img">
+                    Викторина на знание С++
+                    
+                </div>
+            </div>
+        </header>
+
+        <section class="row">
+            <div class="col">
+
+                <div class="question-inner d-flex flex-column justify-content-start bold-text">
+
+                    <div class="question-num">Вопрос 1 </div>
+                    <div class="question-topic">Использование С++</div>
+                   
+
+                    <fieldset class="answer d-flex flex-column">
+                        <legend class="question-text">
+                            Для чего используется С++ ?
+                        </legend>
+                        <div class="question-note">
+                            Выберите несколько вариантов ответы
+                        </div>
+                    
+                        <div class = "answer-block d-flex align-items-center">
+                            <input class="answer-input" type = "radio" name="a" id="answer-1" value="answer" >
+                            <label class="answer-text" for="answer-1">
+                                C++ широко используется для разработки программного обеспечения
+                            </label>
+                        </div>
+                        <div class = "answer-block d-flex align-items-center">
+                            <input class="answer-input" type = "radio" name="b" id="answer-2" value="answer" >
+                            <label class="answer-text" for="answer-2">
+                                C++используется в анализе данных, машинном обучении
+                            </label>
+                        </div>
+                        <div class = "answer-block d-flex align-items-center">
+                            <input class="answer-input" type = "radio" name="c" id="answer-3" value="answer" >
+                            <label class="answer-text" for="answer-3">
+                                C++ для работы с . NET, у него простой синтаксис, больше стандартных библиотек 
+                            </label>
+                        </div>
+                        <div class = "answer-block d-flex align-items-center">
+                            <input class="answer-input" type = "radio" name="d" id="answer-4" value="answer" >
+                            <label class="answer-text" for="answer-4">
+                                C++ для веб-разработки и для разработки под Android
+                            </label>
+                        </div>
+                    </fieldset>
+                </div> 
+            </div>
+        </section>  
+
+        <footer class="row">
+            <div class="col d-flex justify-content-start">
+                <div class="btn btn-question medium-text ">
+                    Ответить
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
